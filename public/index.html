@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pt-BR" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Plataforma oficial dos Residenciais Costa I (Itajaí - SC) e Costa II (Barra Velha - SC). Aluguel de quartos individuais com água, luz, internet, gás e limpeza inclusos." />
+    <meta property="og:title" content="Residenciais Costa I e II - Quartos Individuais" />
+    <meta property="og:description" content="Aluguel mensal com tudo incluso em Itajaí e Barra Velha - SC. Exclusivo para homens, sem caução e contrato simples com registro em cartório." />
+    <title>Residenciais Costa I e II | Quartos com Tudo Incluso</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+              display: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              navy: {
+                950: '#040914',
+                900: '#070e1b',
+                850: '#0c162c',
+                800: '#11203e',
+                700: '#1a305c',
+              },
+              gold: {
+                400: '#fbbf24',
+                500: '#f59e0b',
+                600: '#d97706',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      body {
+        background-color: #070e1b;
+        color: #f8fafc;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      h1, h2, h3, h4, .font-display {
+        font-family: 'Outfit', sans-serif;
+      }
+      .glass-card {
+        background: rgba(17, 32, 62, 0.65);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .glass-card:hover {
+        border-color: rgba(245, 158, 11, 0.35);
+      }
+    </style>
+  </head>
+  <body class="bg-[#070e1b] text-slate-100 min-h-screen selection:bg-amber-500 selection:text-black">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 bg-[#070e1b]/90 backdrop-blur-md border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-amber-500/20">
+            RC
+          </div>
+          <div>
+            <div class="font-display font-bold text-lg text-white leading-tight tracking-wide">Residenciais Costa</div>
+            <div class="text-xs text-amber-400 font-medium">Costa I (Itajaí) & Costa II (Barra Velha)</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+          <a href="#imoveis" class="text-slate-300 hover:text-amber-400 transition-colors">Acomodações</a>
+          <a href="#galeria" class="text-slate-300 hover:text-amber-400 transition-colors">Fotos</a>
+          <a href="#calculadora" class="text-slate-300 hover:text-amber-400 transition-colors">Economia</a>
+          <a href="#regras" class="text-slate-300 hover:text-amber-400 transition-colors">Regras</a>
+          <a href="#faq" class="text-slate-300 hover:text-amber-400 transition-colors">Dúvidas</a>
+          <a href="https://wa.me/5547933843928?text=Ol%C3%A1%20Josiane,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20quartos%20nos%20Residenciais%20Costa!" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold flex items-center gap-2 shadow-lg shadow-emerald-500/20 transition-all transform hover:scale-105">
+            <i data-lucide="phone-call" class="w-4 h-4"></i>
+            WhatsApp (Josiane)
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="relative overflow-hidden pt-12 pb-20 border-b border-white/5 bg-gradient-to-b from-[#0c162c] via-[#070e1b] to-[#070e1b]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-semibold mb-6">
+          <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i>
+          Locação Direta · Sem Burocracia · Registrado em Cartório
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight max-w-4xl mx-auto mb-6">
+          Quartos Individuais com <span class="bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">Todas as Taxas Inclusas</span>
+        </h1>
+
+        <p class="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+          Viva com praticidade em <strong>Itajaí (Costa I)</strong> ou <strong>Barra Velha (Costa II)</strong>. Água, Luz, Internet Wi-Fi, Gás, Zelador e Limpeza Semanal inclusos no valor mensal.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-14">
+          <a href="#imoveis" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black text-base shadow-xl shadow-amber-500/25 flex items-center justify-center gap-2 transition-all">
+            <i data-lucide="home" class="w-5 h-5"></i>
+            Ver Quartos Disponíveis
+          </a>
+          <a href="https://wa.me/5547933843928?text=Ol%C3%A1%20Josiane,%20tenho%20interesse%20em%20alugar%20um%20quarto!" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-300 font-bold text-base flex items-center justify-center gap-2 transition-all">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            Falar com Josiane
+          </a>
+        </div>
+
+        <!-- 4 Highlights Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-left">
+            <div class="text-amber-400 font-bold text-lg flex items-center gap-2 mb-1">
+              <i data-lucide="zap" class="w-5 h-5"></i> Tudo Incluso
+            </div>
+            <div class="text-xs text-slate-300">Água, luz, Wi-Fi, gás, limpeza e zelador sem custos extras.</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-left">
+            <div class="text-cyan-400 font-bold text-lg flex items-center gap-2 mb-1">
+              <i data-lucide="user-check" class="w-5 h-5"></i> Só Homens
+            </div>
+            <div class="text-xs text-slate-300">Ambiente tranquilo, privativo e organizado sem exceção.</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-left">
+            <div class="text-emerald-400 font-bold text-lg flex items-center gap-2 mb-1">
+              <i data-lucide="badge-dollar-sign" class="w-5 h-5"></i> Sem Caução
+            </div>
+            <div class="text-xs text-slate-300">Pague o 1º mês na entrada e entre de imediato.</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-left">
+            <div class="text-purple-400 font-bold text-lg flex items-center gap-2 mb-1">
+              <i data-lucide="file-check-2" class="w-5 h-5"></i> Em Cartório
+            </div>
+            <div class="text-xs text-slate-300">Contrato simples registrado garantindo total segurança.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: ACOMODAÇÕES (COSTA I & COSTA II) -->
+    <section id="imoveis" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Nossos Residenciais</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto">Escolha entre a localização estratégica de Itajaí ou a tranquilidade perto da praia em Barra Velha.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- CARD COSTA I (ITAJAÍ) -->
+        <div class="glass-card rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 flex flex-col">
+          <div class="relative h-64 sm:h-72 overflow-hidden group">
+            <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1000&q=80" alt="Residencial Costa I" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0c162c] via-transparent to-black/40"></div>
+            <div class="absolute top-4 left-4 bg-blue-600 text-white font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-lg shadow">
+              Itajaí - SC (Cordeiros)
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              <div>
+                <h3 class="text-2xl font-black text-white">Residencial Costa I</h3>
+                <p class="text-xs text-slate-300 flex items-center gap-1">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-400"></i> Rua Maranhão, 333 - Cordeiros
+                </p>
+              </div>
+              <div class="text-right bg-slate-900/80 px-3 py-1.5 rounded-xl border border-white/10">
+                <div class="text-xs text-slate-400">Mensalidade</div>
+                <div class="text-2xl font-black text-amber-400">R$ 950<span class="text-xs text-slate-300 font-normal">/mês</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+                Quarto individual privativo no Residencial Costa I. Excelente estrutura em Cordeiros, Itajaí. Pagamento do 1º mês na entrada com contrato simples registrado em cartório.
+              </p>
+
+              <div class="grid grid-cols-2 gap-2.5 mb-6 text-xs text-slate-200">
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Quarto Individual com Chave</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Água, Luz e Wi-Fi Inclusos</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Limpeza Semanal Comum</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Câmeras & Zelador</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Cozinha e Lavanderia</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Somente para Homens</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+              <a href="https://wa.me/5547933843928?text=Ol%C3%A1%20Josiane,%20tenho%20interesse%20no%20quarto%20do%20Residencial%20Costa%20I%20em%20Itaja%C3%AD!" target="_blank" class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold text-center text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all">
+                <i data-lucide="message-circle" class="w-4 h-4"></i> Alugar Costa I (Josiane)
+              </a>
+              <a href="https://maps.google.com/?q=Rua+Maranh%C3%A3o,+333,+Itaja%C3%AD+-+SC" target="_blank" class="p-3 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10" title="Ver no Google Maps">
+                <i data-lucide="map" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD COSTA II (BARRA VELHA) -->
+        <div class="glass-card rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 flex flex-col">
+          <div class="relative h-64 sm:h-72 overflow-hidden group">
+            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1000&q=80" alt="Residencial Costa II" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0c162c] via-transparent to-black/40"></div>
+            <div class="absolute top-4 left-4 bg-teal-600 text-white font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-lg shadow">
+              Barra Velha - SC (Itajubá)
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              <div>
+                <h3 class="text-2xl font-black text-white">Residencial Costa II</h3>
+                <p class="text-xs text-slate-300 flex items-center gap-1">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-teal-400"></i> R. José Antonio de Jesus, 536 - Itajubá
+                </p>
+              </div>
+              <div class="text-right bg-slate-900/80 px-3 py-1.5 rounded-xl border border-white/10">
+                <div class="text-xs text-slate-400">Mensalidade</div>
+                <div class="text-2xl font-black text-amber-400">R$ 900<span class="text-xs text-slate-300 font-normal">/mês</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+                Quarto individual privativo no Residencial Costa II. Ótima localização em Itajubá, próximo à praia e comércio. Bicicletário, ambiente tranquilo e seguro com zelador e câmeras.
+              </p>
+
+              <div class="grid grid-cols-2 gap-2.5 mb-6 text-xs text-slate-200">
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Quarto Individual Privativo</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Bicicletário no Local</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Água, Luz, Gás & Wi-Fi</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Limpeza Semanal Comum</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Câmeras & Monitoramento</div>
+                <div class="flex items-center gap-2 p-2 rounded-lg bg-white/5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Somente para Homens</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+              <a href="https://wa.me/5547933843928?text=Ol%C3%A1%20Josiane,%20tenho%20interesse%20no%20quarto%20do%20Residencial%20Costa%20II%20em%20Barra%20Velha!" target="_blank" class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold text-center text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all">
+                <i data-lucide="message-circle" class="w-4 h-4"></i> Alugar Costa II (Josiane)
+              </a>
+              <a href="https://maps.google.com/?q=R.+Jos%C3%A9+Antonio+de+Jesus,+536,+Barra+Velha+-+SC" target="_blank" class="p-3 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10" title="Ver no Google Maps">
+                <i data-lucide="map" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CALCULADORA DE ECONOMIA -->
+    <section id="calculadora" class="py-16 bg-[#0c162c]/60 border-y border-white/5">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-10">
+          <div class="inline-flex items-center gap-2 text-amber-400 text-sm font-bold uppercase tracking-wider mb-2">
+            <i data-lucide="calculator" class="w-4 h-4"></i> Comparativo de Gastos
+          </div>
+          <h2 class="text-3xl font-extrabold text-white">Quanto você economiza alugando conosco?</h2>
+          <p class="text-slate-400 text-sm">Em um aluguel comum você paga todas as contas separadas. Aqui você paga um valor único fixo.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 sm:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            <!-- Contas Avulsas -->
+            <div class="space-y-3 text-sm">
+              <div class="text-xs font-bold text-rose-400 uppercase tracking-wider">Aluguel Tradicional (Gastos Separados):</div>
+              <div class="flex justify-between py-1.5 border-b border-white/5 text-slate-300"><span>Aluguel Quarto/Kitnet</span><span>R$ 750</span></div>
+              <div class="flex justify-between py-1.5 border-b border-white/5 text-slate-300"><span>Conta de Luz (Energia)</span><span>R$ 150</span></div>
+              <div class="flex justify-between py-1.5 border-b border-white/5 text-slate-300"><span>Água & Esgoto</span><span>R$ 70</span></div>
+              <div class="flex justify-between py-1.5 border-b border-white/5 text-slate-300"><span>Internet Wi-Fi Fibra</span><span>R$ 100</span></div>
+              <div class="flex justify-between py-1.5 border-b border-white/5 text-slate-300"><span>Gás de Cozinha</span><span>R$ 40</span></div>
+              <div class="flex justify-between py-1.5 border-b border-white/5 text-slate-300"><span>Limpeza & Manutenção</span><span>R$ 120</span></div>
+              <div class="flex justify-between pt-2 font-bold text-rose-400 text-base"><span>Total Estimado</span><span>R$ 1.230/mês</span></div>
+            </div>
+
+            <!-- Residenciais Costa -->
+            <div class="bg-gradient-to-br from-amber-500/10 to-emerald-500/10 p-6 rounded-xl border border-amber-500/20 text-center">
+              <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Nos Residenciais Costa:</div>
+              <div class="text-4xl font-black text-white mb-2">R$ 900 a 950</div>
+              <div class="text-xs text-emerald-400 font-semibold mb-4">TUDO INCLUSO · SEM SURPRESAS NO FIM DO MÊS</div>
+              <div class="p-3 bg-emerald-500/20 rounded-lg border border-emerald-500/30 text-emerald-300 font-bold text-sm">
+                Economia de mais de R$ 3.300 por ano!
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: REGRAS E CONDIÇÕES -->
+    <section id="regras" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-white mb-3">Regras e Condições Claras</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto">Tudo transparente para garantir uma convivência respeitosa e tranquila.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center mb-4">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Somente para Homens</h3>
+          <p class="text-sm text-slate-300">Regra estrita sem exceção para manter o padrão de moradia coletiva e privacidade dos moradores.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center mb-4">
+            <i data-lucide="ban" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Não Aceita Animais (Sem Pet)</h3>
+          <p class="text-sm text-slate-300">Proibido qualquer tipo de pet no local por questões de espaço, higiene e sossego coletivo.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4">
+            <i data-lucide="check-circle" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Sem Caução</h3>
+          <p class="text-sm text-slate-300">Não cobramos meses adiantados de caução. Paga-se apenas o 1º mês no ato da entrada.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-4">
+            <i data-lucide="file-signature" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Contrato Registrado em Cartório</h3>
+          <p class="text-sm text-slate-300">Documentação simples, direta e com firma reconhecida para total segurança jurídica de ambas as partes.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center mb-4">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Limpeza Semanal Inclusa</h3>
+          <p class="text-sm text-slate-300">Todas as áreas comuns (corredores, banheiros compartilhados, cozinha e lavanderia) são higienizadas toda semana.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-4">
+            <i data-lucide="shield" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Segurança & Câmeras</h3>
+          <p class="text-sm text-slate-300">Monitoramento por câmeras nas áreas externas e comuns com zelador responsável no suporte.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FAQ ACCORDION -->
+    <section id="faq" class="py-16 bg-[#0c162c]/60 border-t border-white/5">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-extrabold text-white mb-2">Perguntas Frequentes</h2>
+          <p class="text-slate-400 text-sm">Tire suas dúvidas antes de agendar uma visita.</p>
+        </div>
+
+        <div class="space-y-4">
+          <details class="group glass-card rounded-xl p-5 cursor-pointer">
+            <summary class="flex justify-between items-center font-bold text-white text-base list-none">
+              <span>Qual é o valor do aluguel e o que está incluso?</span>
+              <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-amber-400"></i></span>
+            </summary>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed border-t border-white/5 pt-3">
+              O valor fixo é <strong>R$ 950,00/mês</strong> para Itajaí (Costa I) e <strong>R$ 900,00/mês</strong> para Barra Velha (Costa II). Todas as taxas estão inclusas: água, luz, internet Wi-Fi, gás de cozinha, zelador, câmeras e faxina semanal das áreas compartilhadas.
+            </p>
+          </details>
+
+          <details class="group glass-card rounded-xl p-5 cursor-pointer">
+            <summary class="flex justify-between items-center font-bold text-white text-base list-none">
+              <span>O que é necessário para alugar?</span>
+              <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-amber-400"></i></span>
+            </summary>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed border-t border-white/5 pt-3">
+              Basta documento de identificação (RG/CPF), comprovante de renda/trabalho e o pagamento do 1º mês na entrada. O contrato é simples e registrado em cartório. Sem fiador e sem caução.
+            </p>
+          </details>
+
+          <details class="group glass-card rounded-xl p-5 cursor-pointer">
+            <summary class="flex justify-between items-center font-bold text-white text-base list-none">
+              <span>Mulheres ou casais podem alugar?</span>
+              <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-amber-400"></i></span>
+            </summary>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed border-t border-white/5 pt-3">
+              Não. O residencial é <strong>exclusivamente para homens solteiros</strong>, garantindo a tranquilidade e a proposta do imóvel.
+            </p>
+          </details>
+
+          <details class="group glass-card rounded-xl p-5 cursor-pointer">
+            <summary class="flex justify-between items-center font-bold text-white text-base list-none">
+              <span>Como agendar uma visita com a Josiane?</span>
+              <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-amber-400"></i></span>
+            </summary>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed border-t border-white/5 pt-3">
+              Basta clicar no botão do WhatsApp ou ligar diretamente para o número <strong>(47) 93384-3928</strong>. O atendimento é rápido de domingo a domingo das 08h às 20h.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-[#040914] border-t border-white/10 text-center text-sm text-slate-400">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="font-display font-bold text-xl text-white mb-2">Residenciais Costa I e Costa II</div>
+        <p class="text-xs text-slate-400 mb-6">Administração: AJC Serviços Administrativos · Contato: Josiane (47) 93384-3928</p>
+        <div class="text-xs text-slate-600">
+          © 2026 Residenciais Costa. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5547933843928?text=Ol%C3%A1%20Josiane,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20quartos!" target="_blank" class="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all transform hover:scale-110" title="Falar com Josiane no WhatsApp">
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+
+    <!-- INICIALIZAR ÍCONES -->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

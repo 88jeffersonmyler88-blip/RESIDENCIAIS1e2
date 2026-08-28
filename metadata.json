@@ -1,0 +1,6 @@
+{
+  "name": "Residenciais Costa I e II",
+  "description": "Plataforma oficial dos Residenciais Costa I (Itajaí - SC) e Costa II (Barra Velha - SC). Aluguel mensal com todas as taxas inclusas. Somente para homens, sem pets e contrato simples.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
