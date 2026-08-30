@@ -2,7 +2,6 @@ import React, { useState, useMemo } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroBanner } from './components/HeroBanner';
 import { UnitGrid } from './components/UnitGrid';
-import { PhotoGallery } from './components/PhotoGallery';
 import { UnitDetailModal } from './components/UnitDetailModal';
 import { RentalCalculator } from './components/RentalCalculator';
 import { FAQSection } from './components/FAQSection';
@@ -120,12 +119,6 @@ export default function App() {
           onSelectBuilding={handleDirectAccessBuilding}
           onSelectUnit={(unit) => setSelectedUnit(unit)}
           onSimulateUnit={handleSimulateUnit}
-        />
-
-        {/* Photo Gallery with High-Resolution Lightbox */}
-        <PhotoGallery
-          currentBuilding={filters.building}
-          onSelectBuilding={handleDirectAccessBuilding}
         />
 
         {/* Rental & Rules Summary */}

@@ -373,7 +373,7 @@ export const UnitGrid: React.FC<UnitGridProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 gap-3 sm:gap-4">
+        <div className="mb-6 sm:mb-8">
           <div>
             <div className="inline-flex items-center space-x-2 text-amber-300 text-xs font-black tracking-wider uppercase mb-1.5 sm:mb-2 bg-[#0e1c36] border border-amber-500/30 px-3.5 py-1 rounded-full">
               <Building2 className="w-4 h-4 text-amber-400" />
@@ -382,45 +382,6 @@ export const UnitGrid: React.FC<UnitGridProps> = ({
             <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
               Acomodações Disponíveis
             </h2>
-          </div>
-
-          {/* Quick Filter Buttons */}
-          <div className="flex flex-wrap items-center gap-2">
-            <button
-              type="button"
-              onClick={() => onSelectBuilding && onSelectBuilding('todos')}
-              className={`px-4 py-2 rounded-xl text-xs font-black transition cursor-pointer ${
-                currentBuilding === 'todos'
-                  ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/30'
-                  : 'bg-[#0e1c36] hover:bg-[#152a4e] text-slate-200 border border-slate-700'
-              }`}
-            >
-              Ver Todas
-            </button>
-            <button
-              type="button"
-              onClick={() => onSelectBuilding && onSelectBuilding('costa1')}
-              className={`px-4 py-2 rounded-xl text-xs font-black transition cursor-pointer flex items-center space-x-1.5 ${
-                currentBuilding === 'costa1'
-                  ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/30'
-                  : 'bg-[#0e1c36] hover:bg-[#152a4e] text-amber-300 border border-amber-500/30'
-              }`}
-            >
-              <span className="w-2 h-2 rounded-full bg-amber-400" />
-              <span>Costa I (Itajaí)</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => onSelectBuilding && onSelectBuilding('costa2')}
-              className={`px-4 py-2 rounded-xl text-xs font-black transition cursor-pointer flex items-center space-x-1.5 ${
-                currentBuilding === 'costa2'
-                  ? 'bg-cyan-400 text-slate-950 shadow-md shadow-cyan-400/30'
-                  : 'bg-[#081e33] hover:bg-[#0e2c4a] text-cyan-300 border border-cyan-500/30'
-              }`}
-            >
-              <span className="w-2 h-2 rounded-full bg-cyan-400" />
-              <span>Costa II (Barra Velha)</span>
-            </button>
           </div>
         </div>
 
