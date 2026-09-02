@@ -22,7 +22,7 @@ import {
   Armchair
 } from 'lucide-react';
 import { CondoUnit } from '../types';
-import { BUSINESS_INFO, AJC_ASSETS } from '../data/condoData';
+import { BUSINESS_INFO, CONDO_ASSETS } from '../data/condoData';
 
 interface UnitDetailModalProps {
   unit: CondoUnit | null;
@@ -72,8 +72,8 @@ export const UnitDetailModal: React.FC<UnitDetailModalProps> = ({
             <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-[#0c1a33] via-[#081224] to-[#050b17] p-8 text-center">
               <div className="w-20 h-20 rounded-3xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mb-3 shadow-inner">
                 <img
-                  src={AJC_ASSETS.logo}
-                  alt="Logo AJC"
+                  src={CONDO_ASSETS.logo}
+                  alt="Residenciais Costa"
                   className="w-12 h-12 object-contain"
                   referrerPolicy="no-referrer"
                 />
@@ -129,17 +129,10 @@ export const UnitDetailModal: React.FC<UnitDetailModalProps> = ({
             </span>
           </div>
 
-          {/* Strategic Logo Badge on Image (Bottom Right) */}
+          {/* Direct Admin Badge on Image (Bottom Right) */}
           <div className="absolute bottom-3 right-3 flex items-center space-x-2 bg-[#070e1b]/95 backdrop-blur-md px-3 py-1.5 rounded-xl border border-amber-500/40 shadow-lg text-amber-200 text-xs font-black z-10">
-            <div className="w-5 h-5 rounded-full overflow-hidden border border-amber-400/70 shrink-0 bg-slate-900">
-              <img
-                src={AJC_ASSETS.logo}
-                alt="Logo AJC"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <span>{BUSINESS_INFO.management}</span>
+            <ShieldCheck className="w-4 h-4 text-amber-400" />
+            <span>Locação Direta</span>
           </div>
         </div>
 
@@ -163,9 +156,7 @@ export const UnitDetailModal: React.FC<UnitDetailModalProps> = ({
             </div>
 
             <div className="flex items-center space-x-2 text-[11px] text-amber-300 font-bold shrink-0">
-              <div className="w-4 h-4 rounded-full overflow-hidden border border-amber-400/50 shrink-0">
-                <img src={AJC_ASSETS.logo} alt="AJC" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-              </div>
+              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
               <span className="hidden sm:inline">Fotos Reais do Imóvel</span>
             </div>
           </div>
@@ -182,7 +173,7 @@ export const UnitDetailModal: React.FC<UnitDetailModalProps> = ({
                   {unit.unitNumber}
                 </span>
                 <span className="text-[10px] sm:text-xs bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full border border-amber-500/30 font-extrabold">
-                  Gestão AJC
+                  Sem Caução
                 </span>
               </div>
               <h2 className="text-lg sm:text-2xl font-black text-white mt-1">

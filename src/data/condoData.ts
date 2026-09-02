@@ -1,12 +1,12 @@
 import { CondoUnit, GalleryPhoto, LocationLandmark } from '../types';
 
-export const AJC_ASSETS = {
+export const CONDO_ASSETS = {
   logo: '/images/logo.jpeg',
 };
 
 export const BUSINESS_INFO = {
   name: 'Residenciais Costa I e Costa II',
-  management: 'AJC Serviços Administrativos',
+  management: 'Administração Direta',
   subtitle: 'Aluguel de Quartos Individuais · Itajaí & Barra Velha - SC',
   category: 'Quartos Individuais com Tudo Incluso',
   contactName: 'Josiane',
@@ -85,7 +85,9 @@ export const CONDO_UNITS: CondoUnit[] = [
       '/images/costa1/img1.jpeg',
       '/images/costa1/img2.jpeg',
       '/images/costa1/img3.jpeg',
-      '/images/costa1/img4.jpeg'
+      '/images/costa1/img4.jpeg',
+      '/images/costa1/img5.jpeg',
+      '/images/costa1/img6.jpeg'
     ],
     highlights: ['Somente Homens', 'Registro em Cartório', 'Quarto Individual', 'Tudo Incluso']
   },
@@ -141,39 +143,57 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   // COSTA I - ITAJAÍ
   {
     id: 'p1_1',
-    title: 'Residencial Costa I - Vista Geral e Acomodações',
+    title: 'Residencial Costa I - Pátio e Estrutura dos Quartos',
     category: 'costa1',
     building: 'Residencial Costa I',
     city: 'Itajaí - SC',
     url: '/images/costa1/img1.jpeg',
-    caption: 'Residencial Costa I: Rua Maranhão, 333 - Cordeiros, Itajaí - SC.'
+    caption: 'Residencial Costa I: Pátio externo com escada de acesso aos quartos, piso de brita e instalações limpas.'
   },
   {
     id: 'p1_2',
-    title: 'Residencial Costa I - Quarto Individual Privativo',
-    category: 'costa1',
-    building: 'Residencial Costa I',
-    city: 'Itajaí - SC',
-    url: '/images/costa1/img3.jpeg',
-    caption: 'Residencial Costa I: Quarto individual com chave, ambiente iluminado (R$ 950/mês tudo incluso).'
-  },
-  {
-    id: 'p1_3',
-    title: 'Residencial Costa I - Estrutura e Instalações',
+    title: 'Residencial Costa I - Cozinha & Refeitório Compartilhado',
     category: 'costa1',
     building: 'Residencial Costa I',
     city: 'Itajaí - SC',
     url: '/images/costa1/img2.jpeg',
-    caption: 'Residencial Costa I: Quarto bem arejado e mobiliado, pronto para morar.'
+    caption: 'Residencial Costa I: Ampla cozinha compartilhada com mesa rústica de madeira, geladeiras, fogão e bancada.'
+  },
+  {
+    id: 'p1_3',
+    title: 'Residencial Costa I - Banheiro Higienizado Completo',
+    category: 'costa1',
+    building: 'Residencial Costa I',
+    city: 'Itajaí - SC',
+    url: '/images/costa1/img3.jpeg',
+    caption: 'Residencial Costa I: Banheiro completo com azulejos claros, pia de coluna com espelho, vaso sanitário e box.'
   },
   {
     id: 'p1_4',
-    title: 'Residencial Costa I - Acesso e Áreas Compartilhadas',
+    title: 'Residencial Costa I - Instalações e Quartos',
     category: 'costa1',
     building: 'Residencial Costa I',
     city: 'Itajaí - SC',
     url: '/images/costa1/img4.jpeg',
-    caption: 'Residencial Costa I: Instalações organizadas, limpeza semanal, câmeras e zelador.'
+    caption: 'Residencial Costa I: Acomodações individuais privativas com chave, arejadas e organizadas (R$ 950/mês tudo incluso).'
+  },
+  {
+    id: 'p1_5',
+    title: 'Residencial Costa I - Estrutura do Residencial',
+    category: 'costa1',
+    building: 'Residencial Costa I',
+    city: 'Itajaí - SC',
+    url: '/images/costa1/img5.jpeg',
+    caption: 'Residencial Costa I: Ambiente seguro, monitoramento por câmeras, zelador e limpeza frequente.'
+  },
+  {
+    id: 'p1_6',
+    title: 'Residencial Costa I - Detalhes das Acomodações',
+    category: 'costa1',
+    building: 'Residencial Costa I',
+    city: 'Itajaí - SC',
+    url: '/images/costa1/img6.jpeg',
+    caption: 'Residencial Costa I: Instalações prontas para morar em Cordeiros, Itajaí.'
   },
 
   // COSTA II - BARRA VELHA (ITAJUBÁ)

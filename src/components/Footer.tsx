@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Phone } from 'lucide-react';
-import { BUSINESS_INFO, AJC_ASSETS } from '../data/condoData';
+import { BUSINESS_INFO, CONDO_ASSETS } from '../data/condoData';
 
 export const Footer: React.FC<{ onNavigateSection: (id: string) => void }> = ({ onNavigateSection }) => {
   return (
@@ -13,8 +13,8 @@ export const Footer: React.FC<{ onNavigateSection: (id: string) => void }> = ({ 
             <div className="flex items-center space-x-3 mb-2">
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-lg shadow-amber-500/20 shrink-0 bg-slate-900 flex items-center justify-center">
                 <img
-                  src={AJC_ASSETS.logo}
-                  alt="Logo AJC Serviços Administrativos"
+                  src={CONDO_ASSETS.logo}
+                  alt="Logo Residenciais Costa"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -76,7 +76,7 @@ export const Footer: React.FC<{ onNavigateSection: (id: string) => void }> = ({ 
 
         {/* Bottom Copyright */}
         <div className="pt-5 border-t border-slate-800 flex justify-center items-center text-slate-400 font-medium text-xs">
-          <p className="text-center">© AJC. Serviços Administrativos.</p>
+          <p className="text-center">© Residenciais Costa I e II. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

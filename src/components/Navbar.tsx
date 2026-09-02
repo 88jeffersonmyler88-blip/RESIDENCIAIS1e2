@@ -1,5 +1,5 @@
 import React from 'react';
-import { BUSINESS_INFO, AJC_ASSETS } from '../data/condoData';
+import { BUSINESS_INFO, CONDO_ASSETS } from '../data/condoData';
 
 interface NavbarProps {
   onNavigateSection?: (sectionId: string) => void;
@@ -19,8 +19,8 @@ export const Navbar: React.FC<NavbarProps> = () => {
           <div className="flex items-center justify-center space-x-3 text-center">
             <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-amber-400/80 shrink-0 shadow-md shadow-amber-500/25 bg-slate-900 flex items-center justify-center">
               <img
-                src={AJC_ASSETS.logo}
-                alt="Logo AJC Serviços Administrativos"
+                src={CONDO_ASSETS.logo}
+                alt="Logo Residenciais Costa"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />

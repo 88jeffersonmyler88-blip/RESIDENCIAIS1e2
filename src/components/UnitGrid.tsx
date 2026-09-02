@@ -20,7 +20,7 @@ import {
   Armchair
 } from 'lucide-react';
 import { CondoUnit } from '../types';
-import { BUSINESS_INFO, AJC_ASSETS } from '../data/condoData';
+import { BUSINESS_INFO, CONDO_ASSETS } from '../data/condoData';
 
 interface UnitGridProps {
   units: CondoUnit[];
@@ -74,7 +74,7 @@ const UnitCardItem: React.FC<{
               referrerPolicy="no-referrer"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.src = AJC_ASSETS.logo;
+                target.src = CONDO_ASSETS.logo;
               }}
             />
 
@@ -129,8 +129,8 @@ const UnitCardItem: React.FC<{
           <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-[#0c1a33] via-[#081224] to-[#050b17] p-6 text-center">
             <div className="w-16 h-16 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mb-2 shadow-inner">
               <img
-                src={AJC_ASSETS.logo}
-                alt="Logo AJC"
+                src={CONDO_ASSETS.logo}
+                alt="Residenciais Costa"
                 className="w-10 h-10 object-contain"
                 referrerPolicy="no-referrer"
               />
@@ -166,29 +166,12 @@ const UnitCardItem: React.FC<{
             {unit.unitNumber}
           </div>
         </div>
-
-        {/* Strategic Company Logo Badge (Top Right Sub) */}
-        <div className="absolute top-12 right-3 flex items-center space-x-1.5 bg-[#070e1b]/95 backdrop-blur-md px-2.5 py-0.5 rounded-xl border border-amber-500/40 shadow-lg text-amber-200 text-[10px] font-black z-10 pointer-events-none">
-          <div className="w-3.5 h-3.5 rounded-full overflow-hidden border border-amber-400/60 shrink-0 bg-slate-900">
-            <img
-              src={AJC_ASSETS.logo}
-              alt="Logo AJC"
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = '/logo.png';
-              }}
-            />
-          </div>
-          <span className="tracking-wide">AJC Gestão</span>
-        </div>
       </div>
 
       {/* Body Content */}
       <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4 sm:space-y-5">
         <div>
-          {/* Header with Title, Address and AJC Logo */}
+          {/* Header with Title and Address */}
           <div className="space-y-1">
             <div className="flex items-center justify-between gap-2">
               <h3
@@ -197,15 +180,6 @@ const UnitCardItem: React.FC<{
               >
                 {unit.title}
               </h3>
-              {/* Company Logo alongside unit title */}
-              <div className="w-6 h-6 rounded-full overflow-hidden border border-amber-400/50 shrink-0 shadow bg-slate-900" title={BUSINESS_INFO.management}>
-                <img
-                  src={AJC_ASSETS.logo}
-                  alt="AJC Logo"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
             </div>
 
             <p className="text-xs text-slate-300 flex items-center font-medium">
