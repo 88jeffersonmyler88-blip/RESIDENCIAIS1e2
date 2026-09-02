@@ -6,7 +6,7 @@ export const CONDO_ASSETS = {
 
 export const BUSINESS_INFO = {
   name: 'Residenciais Costa I e Costa II',
-  management: 'Administração Direta',
+  management: 'AJC Serviços Administrativos',
   subtitle: 'Aluguel de Quartos Individuais · Itajaí & Barra Velha - SC',
   category: 'Quartos Individuais com Tudo Incluso',
   contactName: 'Josiane',
