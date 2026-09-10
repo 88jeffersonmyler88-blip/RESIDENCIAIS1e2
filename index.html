@@ -10,6 +10,24 @@
 
       gtag('config', 'AW-17562075478');
     </script>
+    <!-- Google tag (gtag.js) event -->
+    <script>
+      gtag('event', 'ads_conversion_Contato_1', {
+        // <event_parameters>
+      });
+
+      // Also trigger conversion when user clicks any WhatsApp or phone contact link
+      document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('click', function(e) {
+          var target = e.target && e.target.closest ? e.target.closest('a') : null;
+          if (target && target.href && (target.href.indexOf('wa.me') !== -1 || target.href.indexOf('whatsapp') !== -1 || target.href.indexOf('tel:') === 0)) {
+            if (typeof gtag === 'function') {
+              gtag('event', 'ads_conversion_Contato_1', {});
+            }
+          }
+        });
+      });
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Plataforma oficial dos Residenciais Costa I (Itajaí - SC) e Costa II (Barra Velha - SC). Aluguel mensal com todas as taxas inclusas. Somente para homens, sem pets e contrato simples." />
